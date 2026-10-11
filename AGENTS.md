@@ -4,7 +4,7 @@
 
 ## Safety rules (must follow)
 1. Treat all model-generated commands as untrusted. Prefer `read` / `grep` / `find` / `ls` for recon before `edit` / `write` / `bash` / `powershell`.
-2. Never read or write outside `C:/Users/dhanu/Desktop/Pi-Runner` without explicit user approval. No `C:\Windows`, no `~/.pi/agent/auth.json`, no credential files.
+2. Never read or write outside `C:/Users/YOU/Desktop/Pi-Runner` without explicit user approval. No `C:\Windows`, no `~/.pi/agent/auth.json`, no credential files.
 3. Never exfiltrate secrets: do not `cat` / `echo` API keys, do not print `auth.json`, `.env`, `*_TOKEN*`, `*_KEY*`. Use env-var names only.
 4. No destructive commands without approval: no `rm -rf`, `format`, `reg delete`, `Remove-Item -Recurse -Force C:\`, `git reset --hard`, `git push --force`.
 5. Prefer Git Bash (`bash` tool / `!` commands) on native Windows. Use `powershell` tool only for Windows-native tasks. Test with `!printf 'Bash is working\n'`.
@@ -12,7 +12,7 @@
 7. Keep changes recoverable: propose diff first, keep commits small, don't force-push.
 
 ## How to work here
-- Working dir: `C:/Users/dhanu/Desktop/Pi-Runner` (already trusted in trust.json - update to Pi-Runner if needed)
+- Working dir: `C:/Users/YOU/Desktop/Pi-Runner` (already trusted in trust.json - update to Pi-Runner if needed)
 - Project config: `.pi/settings.json` (additive only: `+grep,+find,+ls` on top of global `+powershell,+codemode`)
 - Global config (do not edit without asking): `%USERPROFILE%\.pi\agent\settings.json`
 - Verify shell: `!printf 'Bash is working\n'` then `pi --version`
