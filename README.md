@@ -81,6 +81,7 @@ Pi-Coding-Agent-Setup/
 
 MIT
 
+
 ## Exported Global Settings (this machine)
 ```json
 {
@@ -95,11 +96,12 @@ MIT
     "+ls"
   ],
   "codemode.mode": "only",
-  "codemode.inlineBudget": 3000,
+  "codemode.inlineBudget": 4000,
   "packages": [
     "npm:pi-web-access",
     "git:github.com/Danu28/pi-ask-user-question",
     "git:github.com/Danu28/pi-headed-browser"
   ],
   "hideThinkingBlock": true
-}```
+}
+```
