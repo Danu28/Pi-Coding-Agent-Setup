@@ -13,7 +13,6 @@ Exported from `%USERPROFILE%\.pi\agent` so anyone can get the same Pi experience
 | `settings.json` | Global Pi settings template |
 | `.pi/settings.json` | Project-level additive settings |
 | `extensions/agent-status.ts` | Custom extension |
-| `skills/analyze-sessions` | Skill: analyze past sessions |
 | `skills/rpe-workflow` | Skill: RPE workflow |
 | `trust.json.example` | Trusted folders template |
 | `scripts/install.ps1` | Windows installer |
