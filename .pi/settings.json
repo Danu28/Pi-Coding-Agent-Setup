@@ -1,0 +1,7 @@
+{
+  "packages": [
+    "npm:pi-web-access",
+    "git:github.com/Danu28/pi-ask-user-question",
+    "git:github.com/Danu28/pi-headed-browser"
+  ]
+}
